@@ -1,0 +1,11 @@
+﻿@model streamingapp.Models.WatchMovieVM
+
+@{
+    ViewBag.Title = Model.Title;
+}
+
+<h2>Watch - @Model.Title</h2>
+
+<video width="800" height="600" controls autoplay="autoplay">
+    <source src="@Url.Content(Model.MediaLink)" type="video/mp4">
+</video>
